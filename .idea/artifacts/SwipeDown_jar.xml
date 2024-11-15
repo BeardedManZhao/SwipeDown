@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SwipeDown:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SwipeDown_jar</output-path>
+    <root id="archive" name="SwipeDown.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="SwipeDown" />
+      <element id="extracted-dir" path="E:/RunTime/MAVEN/MAVEN_BASE/io/github/BeardedManZhao/zhao-utils/1.2.20241115/zhao-utils-1.2.20241115.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
