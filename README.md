@@ -26,6 +26,23 @@ SwipeDown 是一个专注于性能与稳定性测试的下载工具，作为GitH
 # 这是一个示例命令 其中参数分别是 【数据包大小】【url或null】【每次下载完毕后中途停止时间（MS）】【一共的下载次数】
 java -jar SwipeDown.jar 655350 null 100000 5
 ```
+如果您期望使用自定义头部的方式来实现下载，您可以按照如下的方法操作！
+
+> 此功能是来源于 https://github.com/aliuzzz 用户提出，感谢他的贡献和支持！
+
+- 新建一个 json 文件，用于代表请求头的字段和值
+```json
+{
+  "swipeDown-HTTP-Method": "GET",
+  "Content-Type": "application/*"
+}
+```
+
+- 然后使用下面的命令将它启动！
+```shell
+# 这是一个示例命令 其中参数分别是 【数据包大小】【url或null】【每次下载完毕后中途停止时间（MS）】【一共的下载次数】【请求头文件路径】
+java -jar SwipeDown.jar 655350 null 100000 5 ./headers.json
+```
 
 ## 注意事项
 
